@@ -20,9 +20,11 @@ jobs:
 
     - name: Initialize Node.js and Capacitor
       run: |
+        mkdir www
+        cp index.html style.css script.js www/
         npm init -y
         npm install @capacitor/core @capacitor/cli @capacitor/android
-        npx cap init "Age Calculator" "com.shawnsapps.agecalculator" --web-dir=.
+        npx cap init "Age Calculator" "com.shawnsapps.agecalculator" --web-dir=www
         npx cap add android
 
     - name: Sync Code to Android Project
