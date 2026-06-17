@@ -1,0 +1,6 @@
+{
+  "appId": "com.shawnsapps.agecalculator",
+  "appName": "Age Calculator",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}
