@@ -23,7 +23,7 @@ jobs:
         npm init -y
         npm install @capacitor/core @capacitor/cli
         npm install @capacitor/android
-        npx cap integrity
+        npx cap init "Age Calculator" "com.shawnsapps.agecalculator" --web-dir=.
         npx cap add android
 
     - name: Sync Code to Android Project
